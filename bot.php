@@ -21,11 +21,11 @@ if ( sizeof($request_array['events']) > 0 ) {
         $reply_token = $event['replyToken'];
 
         $text = $event['message']['text'];
-//         $text2 = ' test';
+
         $data = [
             'replyToken' => $reply_token,
             'messages' => [['type' => 'text', 'text' => json_encode($request_array) ]]  Debug Detail message
-//             'messages' => [['type' => 'text', 'text' => $text+$text2 ]]
+//             'messages' => [['type' => 'text', 'text' => $text ]]
         ];
         $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
 
