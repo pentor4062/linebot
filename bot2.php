@@ -6,7 +6,10 @@ $access_token = 'iEP1m9iqn55lr2lypAvXsoLTp1JqemCMEipBb4dBlZTn7uhE1Tufk7AAAmMJ/ls
 $content = file_get_contents('php://input');
 // แปลงเป็น JSON
 $events = json_decode($content, true);
-echo 'test';
+echo 'Array';
+echo '<pre>';
+print_r($events['events']);
+echo '</pre>';
 if (!empty($events['events'])) {
     foreach ($events['events'] as $event) {
         if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
