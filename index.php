@@ -1,3 +1,3 @@
 <?php
-echo "Hello LINE BOT V 1.2";
+echo "Hello LINE BOT V 1.3";
 ?>
