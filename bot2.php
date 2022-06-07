@@ -6,7 +6,7 @@ $access_token = 'iEP1m9iqn55lr2lypAvXsoLTp1JqemCMEipBb4dBlZTn7uhE1Tufk7AAAmMJ/ls
 $content = file_get_contents('php://input');
 // แปลงเป็น JSON
 $events = json_decode($content, true);
-echo 'oOk';
+echo 'Ok';
 if (!empty($events['events'])) {
     foreach ($events['events'] as $event) {
         if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
@@ -14,7 +14,7 @@ if (!empty($events['events'])) {
             // ร่วมกับ USER ID ของไลน์ที่เราต้องการใช้ในการตอบกลับ
             $messages = array(
                 'type' => 'text',
-                'text' => 'Reply message : '.$event['message']['text']."\nUser ID : ".$event['source']['userId']."\nother : ".implode(" ",$event['source']),
+                'text' => 'Reply message : '.$event['message']['text']."\nUser ID : ".$event['source']['userId']."\nother : ".print_r($event),
                 
             );
             $post = json_encode(array(
