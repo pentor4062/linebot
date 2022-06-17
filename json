@@ -1,0 +1,23 @@
+{
+  "type": "template",
+  "altText": "this is a buttons template",
+  "template": {
+    "type": "buttons",
+    "thumbnailImageUrl": "PROVIDE_URL_FROM_YOUR_SERVER",
+    "imageSize": "cover",
+    "title": "ระบบเสนอซ่อม/ซื้อ",
+    "text": "รายการ",
+    "actions": [
+      {
+        "type": "uri",
+        "label": "อนุมัติ",
+        "uri": "http://192.168.1.22/db_2/page_showreport_repair.php?view=1753&code=BPSV.CM004/61"
+      },
+      {
+        "type": "uri",
+        "label": "ไม่อนุมัติ",
+        "uri": "http://192.168.1.22/db_2/page_showrepair.php"
+      }
+    ]
+  }
+}
