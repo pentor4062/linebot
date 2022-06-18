@@ -158,27 +158,8 @@
 	            }
 	          ]
 	        }
-	      },
-	      {
-	        "type": "bubble",
-	        "body": {
-	          "type": "box",
-	          "layout": "vertical",
-	          "spacing": "sm",
-	          "contents": [
-	            {
-	              "type": "button",
-	              "action": {
-	                "type": "uri",
-	                "label": "See more",
-	                "uri": "https://linecorp.com"
-	              },
-	              "flex": 1,
-	              "gravity": "center"
-	            }
-	          ]
-	        }
 	      }
+	      
 	    ]
 	  }
 	}';
